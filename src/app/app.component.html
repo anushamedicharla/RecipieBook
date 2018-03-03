@@ -1,9 +1,10 @@
 <div class="container">
-  <app-header (menuItemSelected)="onMenuSelected($event)"></app-header>
+  <app-header></app-header>
   <div class="row">
     <div class="col-md-12">
-      <app-recipes *ngIf="menuItem === 'recipe'"></app-recipes>
-      <app-shopping-list *ngIf="menuItem !== 'recipe'"></app-shopping-list>
+      <!-- <app-recipes *ngIf="menuItem === 'recipe'"></app-recipes>
+      <app-shopping-list *ngIf="menuItem !== 'recipe'"></app-shopping-list> -->
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>
